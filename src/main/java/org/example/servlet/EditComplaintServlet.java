@@ -3,6 +3,7 @@ package org.example.servlet;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
+import org.example.dao.ComplaintDAO;
 import org.example.model.Complaint;
 import org.example.model.User;
 
