@@ -52,7 +52,9 @@ This system streamlines the internal communication process between employees and
 ### 5️⃣ Run the Application
 - http://localhost:8080/cms/
 
+<pre>
 ## 🗂️ Structured Source Code Layout
+
 cms/
 ├── src/
 │   ├── controller/          # Java Servlets (LoginServlet, ComplaintServlet)
@@ -70,6 +72,7 @@ cms/
 │   └── schema.sql           # SQL dump for database
 │
 └── README.md
+</pre>
 
 ##  Default Users (for testing)
 insert into user(name,email,password,role)values("sasanka","silvakssd@gmail.com","1234","Employee");
