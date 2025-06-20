@@ -7,6 +7,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import org.example.dao.ComplaintDAO;
+import org.example.model.Complaint;
+import org.example.model.User;
 
 import java.io.IOException;
 
