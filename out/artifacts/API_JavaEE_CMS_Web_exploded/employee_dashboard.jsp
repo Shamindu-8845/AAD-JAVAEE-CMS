@@ -28,13 +28,17 @@
     <title>Employee Dashboard</title>
     <style>
         :root {
-            --primary: #008080;
+            --primary: #5f0de8;
+            --primary-hover: #0735ba;
             --primary-light: #a7c7c7;
             --accent: #36454f;
+            --accent-hover: #2b373e;
             --light: #f0f8ff;
             --success: #2e8b57;
+            --success-hover: #276b45;
             --warning: #ffa500;
             --danger: #cd5c5c;
+            --danger-hover: #b14545;
             --white: #ffffff;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             --text-dark: #333333;
@@ -62,6 +66,11 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: var(--shadow);
+            transition: background-color 0.3s ease;
+        }
+
+        header:hover {
+            background-color: var(--primary-hover);
         }
 
         .logo {
@@ -85,7 +94,8 @@
         }
 
         nav a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: var(--accent-hover);
+            color: #ffe;
         }
 
         .container {
@@ -104,6 +114,11 @@
             justify-content: space-between;
             align-items: center;
             border-left: 5px solid var(--accent);
+            transition: transform 0.3s ease;
+        }
+
+        .welcome-section:hover {
+            transform: translateY(-5px);
         }
 
         .welcome-text h1 {
@@ -122,6 +137,11 @@
             border-radius: 8px;
             font-weight: 500;
             box-shadow: var(--shadow);
+            transition: background-color 0.3s ease;
+        }
+
+        .stats-card:hover {
+            background-color: var(--accent-hover);
         }
 
         table {
@@ -151,21 +171,28 @@
         }
 
         .btn {
-            padding: 4px 8px;
-            background-color: #28a745;
+            padding: 4px 10px;
+            background-color: var(--success);
             color: white;
             text-decoration: none;
             border-radius: 4px;
             margin-right: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
+
         .btn:hover {
-            background-color: #218838;
+            background-color: var(--success-hover);
+            transform: scale(1.05);
         }
+
         .btn-danger {
-            background-color: #dc3545;
+            background-color: var(--danger);
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
+
         .btn-danger:hover {
-            background-color: #c82333;
+            background-color: var(--danger-hover);
+            transform: scale(1.05);
         }
 
         .empty-dashboard {
@@ -176,6 +203,11 @@
             box-shadow: var(--shadow);
             margin-top: 2rem;
             border: 1px dashed var(--primary-light);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .empty-dashboard:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
         .empty-icon {
@@ -209,11 +241,11 @@
         }
 
         .empty-action:hover {
-            background-color: #006666;
-            transform: translateY(-2px);
+            background-color: var(--primary-hover);
+            transform: translateY(-2px) scale(1.03);
         }
-
     </style>
+
 </head>
 <body>
 

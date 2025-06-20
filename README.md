@@ -148,16 +148,20 @@ Admins are granted full access to all system complaints and administrative actio
 - Implement session timeout and proper logout mechanisms.
 - Add input sanitization and CSRF protection where needed.
 
-
 ## 🖼️ Project Screenshots
 
 ### 🔐 Login Page
-![Login](screenshots/login.png)
+![Login](assets/images/login.png)
 
-### 🧾 Complaint Submission Form
-![Complaint Form](screenshots/complaint_submission.png)
+### 🧾 Admin Complaint Submission Form
+![Complaint Form](asstes/images/AdminComplaints.png)
 
 ### 🛠️ Admin Dashboard
-![Admin Dashboard](screenshots/admin_dashboard.png)
+![Admin Dashboard](asstes/images/adminDashBoard.png)
 
+### 🧾 Employee Complaint Submission Form
+![Complaint Form](asstes/images/employeeComplaints.png) 
+
+### Employee Dashboard
+![Employee Dashboard](asstes/images/employeeDashBoard.png)
 
