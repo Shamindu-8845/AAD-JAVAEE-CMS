@@ -96,35 +96,58 @@ insert into complaint(complaint_id,employee_id,title,description,status,remarks,
 - JDBC driver missing? → Download MySQL Connector/J and add to lib.
 
 ## 📌 Features & Functionalities
+
 ### 🔐 Authentication Module
-- The authentication module is a crucial component of the Complaint Management System, ensuring that only authorized users can access and perform operations based on their assigned roles.
-- 🔑 Key Capabilities:
-- User Login with Session Management:
--   Secure login via email and password.
--   Session-based tracking to maintain logged-in state.
--   Redirects unauthorized access attempts to the login page.
-- Role-Based Access Control:
--   The system distinguishes users based on their role (Admin or Employee) after login.
--   UI components and functionalities are conditionally displayed depending on the role.
 
-- 👤 Employee Access:
--  Can log in using personal credentials.
--  Allowed to:
--   Submit new complaints.
--   View a personal complaint history.
--   Edit or delete complaints only if unresolved.
+The **Authentication Module** is a core part of the Complaint Management System, responsible for securing access and providing **role-specific capabilities** for users.
 
-- 🛡️ Admin Access:
-- Admins are given extended privileges.
-- Allowed to:
--   View all complaints from all employees.
--   Modify complaint statuses (Pending, In Progress, Resolved, Closed).
--   Add remarks and delete complaints when needed.
+#### 🔑 Key Capabilities
 
-- 🔐 Security Practices (Prototype Level):
-- Passwords are stored in plain text for simplicity in this prototype.
-- In production, implement hashing (e.g., BCrypt) and secure session handling.
-- Session timeout and logout functions can be added for enhanced security.
+- **User Login with Session Management**
+    - Secure login via **email and password**.
+    - Maintains the user's session after successful login.
+    - Redirects unauthenticated users to the login page if they try to access protected pages.
+
+- **Role-Based Access Control**
+    - Supports two user roles: **Employee** and **Admin**.
+    - Pages and functionalities are conditionally rendered based on role.
+
+---
+
+#### 👤 Employee Access
+
+Employees have limited access with the ability to manage only their own complaints.
+
+**Allowed Actions:**
+- Submit new complaints.
+- View complaint history.
+- Edit or delete complaints *only if unresolved*.
+
+---
+
+#### 🛡️ Admin Access
+
+Admins are granted full access to all system complaints and administrative actions.
+
+**Allowed Actions:**
+- View all employee complaints.
+- Update complaint statuses: `Pending`, `In Progress`, `Resolved`, `Closed`.
+- Add remarks to any complaint.
+- Delete any complaint from the system.
+
+---
+
+#### 🔐 Security Practices (Prototype-Level)
+
+> ⚠️ For prototype simplicity:
+- Passwords are stored in **plain text** (not secure — avoid in production).
+- No encryption or hashing is used.
+
+> ✅ For production:
+- Use password hashing (e.g., **BCrypt**).
+- Implement session timeout and proper logout mechanisms.
+- Add input sanitization and CSRF protection where needed.
+
 
 ## 🖼️ Project Screenshots
 
