@@ -2,7 +2,6 @@ package org.example.dao;
 
 import jakarta.servlet.ServletContext;
 import org.apache.commons.dbcp2.BasicDataSource;
-import org.example.model.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
