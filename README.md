@@ -153,15 +153,20 @@ Admins are granted full access to all system complaints and administrative actio
 ### 🔐 Login Page
 ![Login](assets/images/login.png)
 
-### 🧾 Admin Complaint Submission Form
-![Complaint Form](asstes/images/AdminComplaints.png)
-
 ### 🛠️ Admin Dashboard
 ![Admin Dashboard](asstes/images/adminDashBoard.png)
 
-### 🧾 Employee Complaint Submission Form
-![Complaint Form](asstes/images/employeeComplaints.png) 
+### 🧾 Admin Complaint Submission Form
+![Complaint Form](asstes/images/AdminComplaints.png)
 
 ### Employee Dashboard
-![Employee Dashboard](asstes/images/employeeDashBoard.png)
+![Employee Dashboard](asstes/images/EmployeeDashBoard.png)
+
+### 🧾 Employee Complaint Submission Form
+![Complaint Form](asstes/images/EmployeeAddNewComplaints.png)
+
+### Employee Complaint History
+![Complaint History](asstes/images/EmployeeComplaint.png)
+
+
 
