@@ -52,9 +52,9 @@ This system streamlines the internal communication process between employees and
 ### 5️⃣ Run the Application
 - http://localhost:8080/cms/
 
-<pre>
-## 🗂️ Structured Source Code Layout
 
+## 🗂️ Structured Source Code Layout
+<pre>
 cms/
 ├── src/
 │   ├── controller/          # Java Servlets (LoginServlet, ComplaintServlet)
