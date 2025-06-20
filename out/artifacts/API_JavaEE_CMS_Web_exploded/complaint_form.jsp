@@ -16,8 +16,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary: #008080;
-            --primary-light: #a7c7c7;
+            --primary: #0b38ea;
+            --primary-light: #3b0eb6;
             --accent: #36454f;
             --light: #f0f8ff;
             --success: #2e8b57;

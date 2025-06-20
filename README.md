@@ -163,7 +163,7 @@ Admins are granted full access to all system complaints and administrative actio
 ![Employee Dashboard](asstes/images/EmployeeDashBoard.png)
 
 ### 🧾 Employee Complaint Submission Form
-![Complaint Form](asstes/images/EmployeeAddNewComplaints.png)
+![Complaint Form](asstes/images/AddEmployeeComplaints.png)
 
 ### Employee Complaint History
 ![Complaint History](asstes/images/EmployeeComplaint.png)
